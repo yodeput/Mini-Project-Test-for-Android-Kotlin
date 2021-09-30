@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Paxel Yogi</string>
+
+    <string name="no_data">No Data Found</string>
+
+    <!--Network State-->
+    <string name="network_error">Something wrong, please try again.</string>
+    <string name="network_no_internet">Please check your connection.</string>
+    <string name="network_429">Too many request, try again later.</string>
+    <string name="network_403">Unauthorized, please login.</string>
+
+    <!--title-->
+    <string name="title_employee">Employee List</string>
+    <string name="title_detail">Employee Detail</string>
+    <string name="search_placeholder">Find by name</string>
+
+    <!--label-->
+    <string name="l_name">Name</string>
+    <string name="l_age">Age</string>
+    <string name="l_salary">Salary</string>
+    <string name="l_refresh">Refresh</string>
+</resources>

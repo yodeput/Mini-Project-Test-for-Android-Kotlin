@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_employee_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="@dimen/space_2x"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_8x">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/iv_width"
+            android:layout_height="@dimen/iv_height"
+            app:srcCompat="@drawable/img_avatar"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_8x"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@+id/iv_avatar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_avatar">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textSize="@dimen/font_16x"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold"
+                tools:text="Yogi Dewansyah Putra" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start">
+
+                <TextView
+                    android:id="@+id/l_age"
+                    android:paddingEnd="@dimen/space_16x"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold"
+                    tools:text="@string/l_age"
+                    android:visibility="visible"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text"
+                    tools:text="29"
+                    app:layout_constraintLeft_toRightOf="@id/l_salary"
+                    app:layout_constraintTop_toTopOf="@id/l_age"/>
+
+                <TextView
+                    android:id="@+id/l_salary"
+                    android:paddingEnd="@dimen/space_16x"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold"
+                    tools:text="@string/l_salary"
+                    app:layout_constraintTop_toBottomOf="@id/l_age"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tv_salary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_text"
+                    tools:text="1000"
+                    app:layout_constraintLeft_toRightOf="@id/l_salary"
+                    app:layout_constraintTop_toTopOf="@id/l_salary"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
